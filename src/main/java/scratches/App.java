@@ -37,7 +37,7 @@ class App {
                 System.out.println("Это не json-файл");
                 System.exit(0);
             }
-
+            
             garage = JJ.fromJSON(args[0]);
 
 
