@@ -209,12 +209,12 @@ public class Vehicle implements Comparable<Vehicle> {
         if (fuel.equals("GASOLINE") || fuel.equals("KEROSENE") || fuel.equals("ELECTRICITY") || fuel.equals("NUCLEAR") || fuel.equals("ANTIMATTER")) {
             this.fuelType = FuelType.valueOf(fuel);
         } else {
-            System.out.println("Что-то мне не хорошо, ты точно ТО влил? (Тип топлива не был установлен)");
+            System.out.println("Что-то мне нехорошо, ты точно ТО влил? (Тип топлива не был установлен)");
         }
     }
 
     /**
-     * Переопределенный метод compareTo, сравнивающий сзначение
+     * Переопределенный метод compareTo, сравнивающий значение
      * полей Y двух экземпляров класса Coordinates
      *
      * @param vehicle - агрегат

@@ -137,6 +137,10 @@ public class Assistant {
                         printFieldDescendingEnginePower.act(garage);
                         break;
                     }
+                    default: {
+                        System.out.println("СЛЫЫЫЫЫЫЫЫШЬ!");
+                        System.out.println("Введи команду из списка в help.");
+                    }
                 }
             } catch (NoSuchElementException e) {
                 System.out.println("Пока");
