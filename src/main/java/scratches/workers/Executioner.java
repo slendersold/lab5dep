@@ -45,6 +45,7 @@ public class Executioner {
             outer:
             while (true) {
                 line = istream.readLine();
+                if (line == null) break;
                 System.out.println(line);
                 String[] input_ar = line.split(" ");
                 switch (input_ar[0]) {
@@ -142,6 +143,10 @@ public class Executioner {
                     case "print_field_ascending_engine_power": {
                         printFieldDescendingEnginePower.act(garage);
                         break;
+                    }
+                    default: {
+                        System.out.println("СЛЫЫЫЫЫЫЫЫШЬ!");
+                        System.out.println("Введи команду из списка в help.");
                     }
                 }
             }
