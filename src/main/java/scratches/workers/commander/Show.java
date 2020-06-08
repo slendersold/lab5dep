@@ -22,8 +22,7 @@ public class Show implements scratches.workers.commander.One {
         } else {
             System.out.println("Начинаем показ мод");
             for (Vehicle c : garage) {
-                System.out.println(c.getName() + " " + c.getId());
-                System.out.println("----------//----------");
+                Printer.prf(c);
             }
             System.out.println("на сегодня все");
         }
